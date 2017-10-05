@@ -23,6 +23,15 @@ Note that this script requires a log produced by a [modified version of Spark](h
 | Partition | partition corresponding to the size estimate |
 | Estimated Size | average estimated size for the partition |
 
+## rdd-summary.py
+
+| Column | Description |
+| --- | --- |
+| RDD ID | ID of the RDD |
+| Name | name for the RDD defined in the application |
+| Storage Level | persistence level for this RDD (does not account for changes) |
+| Callsite | information on where this RDD was created |
+
 ## uses-caching.py
 
 | Column | Description |
