@@ -31,4 +31,5 @@ Note that this script requires a log produced by a [modified version of Spark](h
 | Runtime | total runtime of the job |
 | Cached Partitions | partitions read from the cache |
 | Cacheable Partitions | partitions which could have been cached because they were previously computed |
+| Annotated Partitions | partitions which were annotated for caching that should be in the cache (unless evicted) |
 | Total Partitions | total number of partitions for all RDDs in the job |
