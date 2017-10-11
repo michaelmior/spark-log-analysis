@@ -9,6 +9,11 @@ To produce a log from your Spark application, the following configuration option
 Each script takes a log file name as an argument.
 Below is a list of all the scripts and the data they produce as output.
 
+## extract-cache-levels.py
+
+Produces JSON output which in a format suitable for feeding back into Spark to modify the storage level of each partition of an RDD during each stage of execution.
+Note that this script requires a [modified version of Spark](https://github.com/michaelmior/spark/tree/track-rdd-size).
+
 ## graph-job.py
 
 Produces a graph of the application in [DOT](http://www.graphviz.org/content/dot-language) format which can be fed to Graphviz to produce a visualization of a spark application.
